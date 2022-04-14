@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background: #eee
+}
+
+.frete-topo {
+    position: fixed;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    padding: 5px;
+    background: rgb(165, 164, 164);
+    font-size: 12px;
+    width: 100%;
+}
+.frete-topo a {
+    padding-left: 10px;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+.menu-topo {
+    padding-top: 29px;
+    display: block;
+    width: 100%;
+    position: fixed;
+}
+.menu-indice {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: white;
+    color: black;
+}
+.menu-indice a {
+    color: black;
+}
+.logo {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.menu-imagens {
+    display: flex;
+    padding-left: 100px;
+    gap: 50px;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+.menu-img-painel {
+    width: 100%;
+    padding: 0;
+    padding-top: 109px;    
+}
+.img-painel {
+    width: 100%;
+    position: absolute;
+    height: 256px;
+}
+.texto-img-painel {
+    margin-top: 50px;
+    position: relative;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.texto-img-painel h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.texto-img-painel h2 {
+    font-size: 40px;
+
+}
