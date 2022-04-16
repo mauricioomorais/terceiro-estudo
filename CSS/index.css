@@ -80,5 +80,47 @@ body {
 }
 .texto-img-painel h2 {
     font-size: 40px;
+}
+.menu-espaco {
+    padding: 45px;
+}
 
+
+.grid div a {
+    color: black;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);    
+}
+.grid-box {
+    display: flex;
+    margin-top: 30px;
+    background: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 5px;
+    gap: 20px;
+    padding-left: 2px;
+    margin-bottom: 50px;
+}
+.grid-text-top {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.grid-text-bottom {
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.grid-pag {
+    border-left: solid rgb(166, 240, 252) 3px;
+    border-right: solid #eee 2px;
+    padding-left: 50px;
+    padding-right: 20px; 
+}
+.grid-img {
+    padding-top: 20px;
+}
+.grid div a {
+    color: rgb(119, 160, 167);
 }
