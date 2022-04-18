@@ -13,7 +13,7 @@ body {
     background: #eee
 }
 
-/* ----- MENU HOME ------  */
+/* ---------- MENU HOME ----------  */
 
 .frete-topo {
     position: fixed;
@@ -39,34 +39,45 @@ body {
     width: 100%;
     position: fixed;
     z-index: 30;
+    width: 100%;
 }
 .menu-indice {
-    display: flex;
+    display: inline-flex;
     gap: 40px;
     align-items: center;
     background: white;
     color: black;
+    width: 100%;
+    justify-content: center;
+    border: solid white 5px;
 }
 .menu-indice a {
     color: black;
+    justify-content: space-between;
 }
 .menu-indice a:hover {
     color: #808080;
 }
-
 .logo {
     margin-left: 50px;
     margin-top: 10px;
 }
 .menu-imagens {
-    display: flex;
+    display: inline-flex;
+    padding-right: 50px;
     padding-left: 100px;
     gap: 50px;
-    justify-content: flex-end;
+    justify-content: space-between ;
     text-decoration: none;
+    cursor: pointer;
+}
+.menu-imagens li img:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
-/* ----- MENU PAINEL HOME -----  */
+/* ---------- MENU PAINEL HOME ----------  */
 
 .menu-img-painel {
     width: 100%;
@@ -84,7 +95,7 @@ body {
     color: white;
     width: 100%;
     text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .texto-img-painel h1 {
     margin-bottom: 20px;
@@ -97,22 +108,30 @@ body {
     padding: 45px;
 }
 
-/* ----- MENU PAGAMENTO -----  */
+/* ---------- MENU PAGAMENTO ----------  */
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);    
+    grid-template-columns: repeat(1, 1fr);   
+}
+.grid-menu-teste {
+    justify-content: center;
+    display: flex;
 }
 .grid-box {
     display: flex;
     margin-top: 30px;
-    background: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 5px;
-    gap: 20px;
-    padding-left: 2px;
+    gap: 30px;
     margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;  
+}
+.grid-menu-all {    
+    display: flex;
+    border-radius: 5px;
+    gap: 30px;
+    background: white;
+    padding-right: 30px; 
 }
 .grid-text-top {
     padding-top: 20px;
@@ -134,15 +153,12 @@ body {
 .grid div a {
     color: rgb(119, 160, 167);
 }
-.grid div a:hover {
+.grid div a:hover,
+.cards-titulo a:hover {
     color: rgb(30, 232, 247);
 }
 
-/* ----- CARDS ------  */
-
-.cards-box-all {
-    cursor: pointer;
-}
+/* ---------- CARDS ONE ----------  */
 .cards-titulo {
     display: flex;
     font-size: 15px;
@@ -153,7 +169,7 @@ body {
 .cards-titulo a {
     padding-top: 10px;
     padding-left: 20px;
-    color: rgb(119, 160, 167);
+    color: #808080;
 }
 .grid-cards-box {
     display: grid;
@@ -162,28 +178,49 @@ body {
 .grid-cards-one {
     display: flex;
     background: white;
-    padding-left: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 390px !important;
+    text-align: left;
 }
 .grid-cards {
     display: flex;
     background: white;
-    padding-left: 20px;
-    padding-top: 10px;  
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 390px !important;
+    text-align: left;
 }
-.cards-valor {
-    padding-left: 20px;
-    font-size: 25px;
+.img-cards-one {
+    text-align: center;
+    border-bottom: solid #eeecec 1px;
+}
+.cards-valor,
+.cards-parcela,
+.cards-msg {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.cards-valor-promo-one {
+    font-size: 20px;
+    text-decoration: line-through;
+    padding-left: 30px;
+}
+
+.cards-valor {
+    font-size: 25px;
+    padding-left: 30px;
 }
 .cards-parcela {
-    padding-left: 20px;
-    border-bottom: solid white 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    border-bottom: solid white 5px;
+    padding-left: 30px;
 }
 .cards-msg {
-    padding-left: 20px;
+    padding: 10px;
     padding-bottom: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    padding-left: 30px;
 }
 .cards-espaco {
     padding: 30px;
@@ -211,27 +248,35 @@ body {
     padding-top: 355px;
 }
 
-/* ----- INFORMAÇÕES IMPORTANTES ------  */
-
+/* ---------- INFORMAÇÕES IMPORTANTES ----------  */
+.info-text-titulo,
+.info-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .info-grid-content {
-    display: flex;
-    width: 90%;
-    margin-left: 61px;
+    display: grid;
+    width: 100%;
+    padding-left: 61px;
     border-radius: 10px;
+    background: white;
+    padding: 50px;
+    justify-content: center;
 }
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(1, 3fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-    border-left: #808080 solid 1px;
+    border-left: #cacaca solid 1px;
     border-radius: 1px;
-    background: white;
     text-align: center;
 }
+.info-grid-all {
+    display: flex;
+    align-items: stretch;
+}
 .info-text-titulo {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     margin-left: 20px;
     margin-top: 40px;
     margin-right: 20px;
@@ -239,9 +284,9 @@ body {
 .info-text {
     margin-left: 20px;
     margin-bottom: 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 20px;
+    color: #808080;
 }
 .info-grid img {
     width: 100px;
@@ -250,21 +295,194 @@ body {
     padding-top: 20px;
 }
 
-.grid-cards-main-two {
-    width: 95%;
-    border: red solid 50px;
-}
+/* ---------- GRID TWO ----------  */
 
+.container-two {
+ padding-left: 50px;
+ justify-items: center;
+ justify-content: center;
+}
+.grid-cards-box-two {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+}
 .grid-cards-two {
-    display: flex;
     background: white;
-    padding-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     padding-top: 10px;
-    border: red solid 10px;  
+    align-items: center;
+    text-align: left;
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+}
+.grid-cards-two:hover {
+    box-shadow: 0 0 1em rgb(177, 175, 175);
+}
+.grid-cards-one-two:hover {
+    box-shadow: 0 0 1em rgb(177, 175, 175);
+}
+.cards-valor-two,
+.cards-msg-two,
+.cards-parcela-two,
+.cards-valor-promo-two {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+.cards-valor-two {
+    font-size: 25px;
+    padding-left: 30px;
+}
+.cards-valor-promo-two {
+    font-size: 20px;
+    text-decoration: line-through;
+    padding-left: 30px;
+}
+.cards-parcela-two {
+    border-bottom: solid white 5px;
+    padding-left: 30px;
+}
+.cards-msg-two {
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+.img-cards-two {
+    text-align: center;
+    border-bottom: solid #eeecec 1px;
+}
+.close-menu {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .grid-cards-box-two {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 900px) {
+    .grid-cards-box-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info-grid-all {
+        display: block;
+    }
+    .grid-menu-all {    
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-right: 2px !important;
+    }
+    .grid {
+        border-left: solid rgb(166, 240, 252) 3px;
+        border-right: solid #eee 2px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding-top: 750px;
+    }
+}
+@media (max-width: 800px) {
+    .grid-cards-box-two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo {
+        margin-left: 0 !important;
+    }
+    .menu-imagens {
+        justify-content: center !important;
+        display: flex;
+    }
+    .menu-imagens ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-indice {
+        bottom: 0;
+        height: 100vh;
+        display: block;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-indice li {
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+        padding: 25px;
+    }
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 40;
+        top: 50px;
+        right: 20px;
+        background: rgba(151, 148, 148, 0.397);
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 0;
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .close-menu:checked~.menuu {
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+    .menuu {
+        display: none;
+    }
+    .texto-img-painel h1 {
+        font-size: 20px ;
+    }
+    .texto-img-painel h2 {
+        font-size: 30px ;
+    }
+    .grid-cards-one,
+    .grid-cards {
+        width: 100% !important;
+    }
+
+
+    
+
+
+
+
+
+
+
+
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- RODAPE ----------  */
 
 .nadaa {
     border: red solid 120px;

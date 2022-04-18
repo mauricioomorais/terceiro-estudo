@@ -11,7 +11,11 @@
 
     <title>Site de Games</title>
 </head>
+<!------------ MENU HOME ------------>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    
     <header>
         <div>
             <div class="frete-topo" >
@@ -20,44 +24,46 @@
             </div>
         </div>
     </header>
-    <header>
-        <div class="menu-topo">
-            <nav>
-                <ul class="menu-indice">
-                    <li>
-                        <img class="logo" src="imagens/logo-games.jpg" width="60px" height="60px" alt="logo-game">
-                    </li>
-                    <li>
-                       <a href="#">Games</a> 
-                    </li>
-                    <li>
-                       <a href="">Brinquedos e Hobbies</a> 
-                    </li>
-                    <li>
-                       <a href="">Informática</a> 
-                    </li>
-                    <li>
-                      <a href="">Celulares e Telefones</a>  
-                    </li>
-                    <li>
-                       <a href="">Mais categorias</a> 
-                    </li>
-                    <div class="menu-imagens">
-                        <li>
-                            <img src="imagens/lupa.svg" alt="lupa-pesquisa">
-                        </li>
-                        <li>
-                            <img src="imagens/carta.svg" alt="carta-mensagem">
-                        </li>
-                        <li>
-                            <img src="imagens/carrinho.svg" alt="carrinho-compras">
-                        </li>
-                    </div>
-                </ul>
-            </nav>
 
+    <aside class="menuu">
+        <div class="menu-topo" >
+            <nav>
+                    <ul class="menu-indice" onclick="getElementById('close-menu').checked = false;">
+                        <li>
+                            <img class="logo" src="imagens/logo-games.jpg" width="60px" height="60px" alt="logo-game">
+                        </li>
+                        <li>
+                            <a href="#">Games</a> 
+                        </li>
+                        <li>
+                            <a href="">Brinquedos e Hobbies</a> 
+                        </li>
+                        <li>
+                            <a href="">Informática</a> 
+                        </li>
+                        <li>
+                            <a href="">Celulares e Telefones</a>  
+                        </li>
+                        <li>
+                            <a href="">Mais categorias</a> 
+                        </li>
+                        <div class="menu-imagens">
+                                <li>
+                                    <img src="imagens/lupa.svg" alt="lupa-pesquisa">
+                                </li>
+                                <li>
+                                    <img src="imagens/carta.svg" alt="carta-mensagem">
+                                </li>
+                                <li>
+                                    <img src="imagens/carrinho.svg" alt="carrinho-compras">
+                                </li>
+                        </div>
+                    </ul>
+            </nav>
         </div>
     </aside>
+
+<!------------ MENU PAINEL HOME ------------>
     <section>
         <div class="menu-img-painel">
             <img class="img-painel" src="imagens/menu.jpg" alt="imagem-menu-painel">
@@ -67,34 +73,43 @@
             <h2>Encontre aqui os melhores produtos de Games</h2>
         </div>
     </section>
-    <div class="menu-espaco"></div>
-    <section>
-        <div class="grid-box">
-            <div class="grid-pag">
-                <div class="grid-text-top">Pagamento cômodo e seguro</div>
-                <div class="grid-text-bottom">com Mercado Pago</div>
-            </div>
-            <a href="#" class="grid-img"><img src="imagens/credit_card.svg" alt="" width="30" height="30"></a>
-            <div class="grid">
-                <div class="grid-text-top">Até 12 parcelas sem juros</div>
-                <div class="grid-text-bottom"><a href="#">Ver mais</a></div>
-            </div>
-            <a href="#" class="grid-img"><img src="imagens/Vector (1).svg" alt=""  width="30"  height="30"></a>
-            <div class="grid">
-                <div class="grid-text-top">À vista no boleto bancário</div>
-                <div class="grid-text-bottom"><a href="#">Ver mais</a></div>
-            </div>
-            <a href="#" class="grid-img"><img src="imagens/Vector.svg" alt=""  width="30"  height="30"></a>
-            <div class="grid">
-                <div class="grid-text-top">Mais meios de pagamento</div>
-                <div class="grid-text-bottom"><a href="#" target="_blank">Ver mais</a></div>
-            </div>
 
+    <div class="menu-espaco"></div>
+
+<!------------ MENU PAGAMENTO ------------>
+    <section class="grid-menu-teste">
+        <div class="grid-box">
+            <div class="grid-menu-all">
+                <div class="grid-pag">
+                    <div class="grid-text-top">Pagamento cômodo e seguro</div>
+                    <div class="grid-text-bottom">com Mercado Pago</div>
+                </div>
+
+                <a href="#" class="grid-img"><img src="imagens/credit_card.svg" alt="" width="30" height="30"></a>
+
+                <div class="grid">
+                    <div class="grid-text-top">Até 12 parcelas sem juros</div>
+                    <div class="grid-text-bottom"><a href="#">Ver mais</a></div>
+                </div>
+
+                <a href="#" class="grid-img"><img src="imagens/Vector (1).svg" alt=""  width="30"  height="30"></a>
+
+                <div class="grid">
+                    <div class="grid-text-top">À vista no boleto bancário</div>
+                    <div class="grid-text-bottom"><a href="#">Ver mais</a></div>
+                </div>
+
+                <a href="#" class="grid-img"><img src="imagens/Vector.svg" alt=""  width="30"  height="30"></a>
+
+                <div class="grid">
+                    <div class="grid-text-top">Mais meios de pagamento</div>
+                    <div class="grid-text-bottom"><a href="#" target="_blank">Ver mais</a></div>
+                </div>
+            </div>
         </div>
     </section>
 
-
-    
+<!------------ CARDS ONE------------>    
     <section>
         <div class="cards-box-all">
             <div class="cards-titulo">
@@ -107,96 +122,108 @@
                 <div class="swiper-wrapper grid-cards-box">
                     <div class="swiper-slide grid-cards-one">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 299,90</div>
+                            <div class="cards-valor-promo-one">R$ 349,90</div>
                             <div class="cards-parcela">12x 24,99 sem juros</div>
                             <div class="cards-msg">Resident Evil 8 Village Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/YAKUSA-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/YAKUSA-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 87,91</div>
+                            <div class="cards-valor-promo-one">R$ 149,90</div>
                             <div class="cards-parcela">12x 22,00</div>
                             <div class="cards-msg">Yakuza 6 The Song Of Life Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/HELLOW-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/HELLOW-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 549</div>
+                            <div class="cards-valor-promo-one">R$ 649,90</div>
                             <div class="cards-parcela">12x 53,36</div>
                             <div class="cards-msg">Hollow Knight Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 189,90</div>
+                            <div class="cards-valor-promo-one">R$ 249,90</div>
                             <div class="cards-parcela">12x 18,46</div>
                             <div class="cards-msg">Sonic All Star Racing Transformed Ps3 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/DARIUS.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/DARIUS.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 2.499,90</div>
+                            <div class="cards-valor-promo-one">R$ 2.749,90</div>
                             <div class="cards-parcela">12x 242,97 sem juros</div>
                             <div class="cards-msg">Darius Cozmic Collection International Collector's Edition</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/SINKINGCITY-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/SINKINGCITY-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 389,89</div>
+                            <div class="cards-valor-promo-one">R$ 449,90</div>
                             <div class="cards-parcela">12x 37,90</div>
                             <div class="cards-msg">Sinking City Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 99,90</div>
+                            <div class="cards-valor-promo-one">R$ 149,90</div>
                             <div class="cards-parcela">12x 8,33 sem juros</div>
                             <div class="cards-msg">Man Of Medan Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 379,99</div>
+                            <div class="cards-valor-promo-one">R$ 449,90</div>
                             <div class="cards-parcela">12x 36,93</div>
                             <div class="cards-msg">Warrior Orochi 4 Ultimate - Ps4</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/PATRULHA CANINA.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/PATRULHA CANINA.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 199,90</div>
+                            <div class="cards-valor-promo-one">R$ 249,90</div>
                             <div class="cards-parcela">12x 11,65 sem juros</div>
                             <div class="cards-msg">Patrulha Canina Super Filhotes Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 99,90</div>
+                            <div class="cards-valor-promo-one">R$ 149,90</div>
                             <div class="cards-parcela">12x 8,33 sem juros</div>
                             <div class="cards-msg">Man Of Medan Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/MARIO.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/MARIO.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 399,90</div>
+                            <div class="cards-valor-promo-one">R$ 449,90</div>
                             <div class="cards-parcela">12x 38,87</div>
                             <div class="cards-msg">Mario + Rabbids Kingdom Battle Switch Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div><a href="#" target="_blank"><img src="img-jogos/SPLATONN.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="#" target="_blank"><img src="img-jogos/SPLATONN.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 529,89</div>
+                            <div class="cards-valor-promo-one">R$ 649,90</div>
                             <div class="cards-parcela">12x 51,15 sem juros</div>
                             <div class="cards-msg">Splatoon 2 Switch Midia Fisica</div>
                         </div>               
@@ -210,12 +237,11 @@
     </section>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
-    spaceBetween: 40,
+    spaceBetween: 10,
     slidesPerGroup: 4,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -230,73 +256,259 @@
   });
 </script>
 
-
+<!------------ CARDS TWO ------------> 
 <section>
-    <div class="grid-cards-main-two">
-        <div class="grid-cards-two">
-            <div>
-                <div><a href="#" target="_blank"><img src="img-jogos/SPLATONN.jpg" width="220" alt=""></a></div>
-                <div class="cards-valor">R$ 529,89</div>
-                <div class="cards-parcela">12x 51,15 sem juros</div>
-                <div class="cards-msg">Splatoon 2 Switch Midia Fisica</div>
-            </div>
-            <div class="grid-cards-two">
-                <div>
-                    <div><a href="#" target="_blank"><img src="img-jogos/MARIO.jpg" width="220" alt=""></a></div>
-                    <div class="cards-valor">R$ 399,90</div>
-                    <div class="cards-parcela">12x 38,87</div>
-                    <div class="cards-msg">Mario + Rabbids Kingdom Battle Switch Midia Fisica</div>
+    <div class="cards-box-all">
+        <div class="cards-titulo">
+            <h2>Mais produtos</h2>
+            <a href="#" target="_blank">Ver mais</a>
+        </div>
+
+
+        <div class="container-two">
+            <div class="grid-cards-box-two">
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 299,90</div>
+                        <div class="cards-valor-promo-two">R$ 349,90</div>
+                        <div class="cards-parcela-two">12x 24,99 sem juros</div>
+                        <div class="cards-msg-two">Resident Evil 8 Village Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MARIO.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 399,90</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 38,87</div>
+                        <div class="cards-msg-two">Mario + Rabbids Kingdom Battle Switch Midia Fisica</div>
+                    </div>
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 99,90</div>
+                        <div class="cards-valor-promo-two">R$ 149,90</div>
+                        <div class="cards-parcela-two">12x 8,33 sem juros</div>
+                        <div class="cards-msg-two">Man Of Medan Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 379,99</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 36,93</div>
+                        <div class="cards-msg-two">Warrior Orochi 4 Ultimate - Ps4</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/SPLATONN.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 529,89</div>
+                        <div class="cards-valor-promo-two">R$ 649,90</div>
+                        <div class="cards-parcela-two">12x 51,15 sem juros</div>
+                        <div class="cards-msg-two">Splatoon 2 Switch Midia Fisica</div>
+                    </div>
+                </div>    
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 379,99</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 36,93</div>
+                        <div class="cards-msg-two">Warrior Orochi 4 Ultimate - Ps4</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 379,99</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 36,93</div>
+                        <div class="cards-msg-two">Warrior Orochi 4 Ultimate - Ps4</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 379,99</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 36,93</div>
+                        <div class="cards-msg-two">Warrior Orochi 4 Ultimate - Ps4</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 299,90</div>
+                        <div class="cards-valor-promo-two">R$ 349,90</div>
+                        <div class="cards-parcela-two">12x 24,99 sem juros</div>
+                        <div class="cards-msg-two">Resident Evil 8 Village Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MARIO.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 399,90</div>
+                        <div class="cards-valor-promo-two">R$ 349,90</div>
+                        <div class="cards-parcela-two">12x 38,87</div>
+                        <div class="cards-msg-two">Mario + Rabbids Kingdom Battle Switch Midia Fisica</div>
+                    </div>
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 99,90</div>
+                        <div class="cards-valor-promo-two">R$ 149,90</div>
+                        <div class="cards-parcela-two">12x 8,33 sem juros</div>
+                        <div class="cards-msg-two">Man Of Medan Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 99,90</div>
+                        <div class="cards-valor-promo-two">R$ 149,90</div>
+                        <div class="cards-parcela-two">12x 8,33 sem juros</div>
+                        <div class="cards-msg-two">Man Of Medan Ps4 Midia Fisica</div>
+                    </div>
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 299,90</div>
+                        <div class="cards-valor-promo-two">R$ 349,90</div>
+                        <div class="cards-parcela-two">12x 24,99 sem juros</div>
+                        <div class="cards-msg-two">Resident Evil 8 Village Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/YAKUSA-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 87,91</div>
+                        <div class="cards-valor-promo-two">R$ 149,90</div>
+                        <div class="cards-parcela-two">12x 22,00</div>
+                        <div class="cards-msg-two">Yakuza 6 The Song Of Life Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/HELLOW-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 549</div>
+                        <div class="cards-valor-promo-two">R$ 649,90</div>
+                        <div class="cards-parcela-two">12x 53,36</div>
+                        <div class="cards-msg-two">Hollow Knight Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 189,90</div>
+                        <div class="cards-valor-promo-two">R$ 249,90</div>
+                        <div class="cards-parcela-two">12x 18,46</div>
+                        <div class="cards-msg-two">Sonic All Star Racing Transformed Ps3 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/DARIUS.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 2.499,90</div>
+                        <div class="cards-valor-promo-two">R$ 2.749,90</div>
+                        <div class="cards-parcela-two">12x 242,97 sem juros</div>
+                        <div class="cards-msg-two">Darius Cozmic Collection International Collector's Edition</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/SINKINGCITY-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 389,89</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 37,90</div>
+                        <div class="cards-msg-two">Sinking City Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 99,90</div>
+                        <div class="cards-valor-promo-two">R$ 149,90</div>
+                        <div class="cards-parcela-two">12x 8,33 sem juros</div>
+                        <div class="cards-msg-two">Man Of Medan Ps4 Midia Fisica</div>
+                    </div>               
+                </div>
+                <div class="grid-cards-two">
+                    <div>
+                        <div class="img-cards-two"><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
+                        <div class="cards-valor-two">R$ 379,99</div>
+                        <div class="cards-valor-promo-two">R$ 449,90</div>
+                        <div class="cards-parcela-two">12x 36,93</div>
+                        <div class="cards-msg-two">Warrior Orochi 4 Ultimate - Ps4</div>
+                    </div>               
                 </div>
             </div>
-            <div class="grid-cards-two">
-                <div>
-                    <div><a href="#" target="_blank"><img src="img-jogos/MAN OF MEDAN.jpg" width="220" alt=""></a></div>
-                    <div class="cards-valor">R$ 99,90</div>
-                    <div class="cards-parcela">12x 8,33 sem juros</div>
-                    <div class="cards-msg">Man Of Medan Ps4 Midia Fisica</div>
-                </div>               
-            </div>
-            <div class="grid-cards-two">
-                <div>
-                    <div><a href="#" target="_blank"><img src="img-jogos/WARRIOR.jpg" width="220" alt=""></a></div>
-                    <div class="cards-valor">R$ 379,99</div>
-                    <div class="cards-parcela">12x 36,93</div>
-                    <div class="cards-msg">Warrior Orochi 4 Ultimate - Ps4</div>
-                </div>               
-            </div>
+        </div>       
     </div>     
 </section>
 
+<div class="cards-espaco"></div>
 
-
-    <div class="cards-espaco"></div>
+<!------------ INFORMAÇÕES IMPORTANTES ------------>  
 
 <section>
     <div class="info-grid-content">
+        <div class="info-grid-all">
         <div class="info-grid">
-            <img src="imagens/featured_play_list.svg" width="100" height="100" alt="carta-mensagem">
+            <img src="imagens/featured_play_list.svg" width="90" height="90" alt="cartã de credito">
             <div class="info-text-titulo">Pague com cartão de crédito ou boleto</div>
             <div class="info-text">Com o Mercado Pago você paga parcelado sem juros ou à vista no boleto. É sempre seguro!</div>
-        </div>
+        </div>          
         <div class="info-grid">
-            <img src="imagens/inventory_2.svg" width="100" height="100"  alt="caixa-encomenda">
+            <img src="imagens/inventory_2.svg" width="90" height="90" alt="caixa-encomenda">
             <div class="info-text-titulo">Frete grátis em produtos selecionados</div>
             <div class="info-text">Escolha o Mercado Envios e acompanhe sua compra até recebê-la. Todos os seus pacotes estarão protegidos.</div>
         </div>
         <div class="info-grid">
-            <img src="imagens/Vector (2).svg" width="100" height="100"  alt="caixa-encomenda">
+            <img src="imagens/Vector (2).svg" width="90" height="90" alt="simbolo-seguro-escudo">
             <div class="info-text-titulo">Segurança, do início ao fim</div>
             <div class="info-text">Acompanhamos você até que receba o que comprou. E se não receber o que esperava, devolvemos o dinheiro.</div>
         </div>
-
+        </div>
     </div>
+
 </section>
 
-<section>
-    <div class="nadaa">
-    <div>nada</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------ RODAPE ------------>  
+
+<footer>
+    <div>
+        <div class="nadaa">
+        <div>Facebook</div>
+        <div>Instagram</div>
+        <div>Mercado Livre</div>
+    </div>
 </div>
-</section>
+</footer>
   
 
 
