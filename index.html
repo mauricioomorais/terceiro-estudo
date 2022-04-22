@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="JS/index.js">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -30,10 +29,10 @@
             <nav>
                     <ul class="menu-indice" onclick="getElementById('close-menu').checked = false;">
                         <li>
-                            <img class="logo" src="imagens/logo-games.jpg" width="60px" height="60px" alt="logo-game">
+                            <a href="/index.html"><img class="logo" src="imagens/logo-games.jpg" width="60px" height="60px" alt="logo-game"></a>
                         </li>
                         <li>
-                            <a href="#">Home</a> 
+                            <a href="/index.html" class="home">Home</a> 
                         </li>
                         <li>
                             <a href="">Games</a> 
@@ -120,13 +119,13 @@
 
             <div class="swiper mySwiper container">
                 <div class="swiper-wrapper grid-cards-box">
-                    <div class="swiper-slide grid-cards-one">
+                    <div class="swiper-slide grid-cards-one card-one">
                         <div>
-                            <div class="img-cards-one"><a href="#" target="_blank"><img src="imagens/img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
-                            <div class="cards-valor">R$ 299,90</div>
-                            <div class="cards-valor-promo-one">R$ 349,90</div>
-                            <div class="cards-parcela">12x 24,99 sem juros</div>
-                            <div class="cards-msg">Resident Evil 8 Village Ps4 Midia Fisica</div>
+                            <div class="img-cards-one card-one"><a href="#"><img src="imagens/img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="cards-valor card-one">R$ 299,90</div>
+                            <div class="cards-valor-promo-one card-one">R$ 349,90</div>
+                            <div class="cards-parcela card-one">12x 24,99 sem juros</div>
+                            <div class="cards-msg card-one">Resident Evil 8 Village Ps4 Midia Fisica</div>
                         </div>               
                     </div>
                     <div class="swiper-slide grid-cards">
@@ -149,7 +148,7 @@
                     </div>
                     <div class="swiper-slide grid-cards">
                         <div>
-                            <div class="img-cards-one"><a href="/index-Sonic.html" target="_blank"><img src="imagens/img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
+                            <div class="img-cards-one"><a href="/index-Sonic.html"><img src="imagens/img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
                             <div class="cards-valor">R$ 189,90</div>
                             <div class="cards-valor-promo-one">R$ 249,90</div>
                             <div class="cards-parcela">12x 18,46</div>
@@ -231,9 +230,9 @@
                 </div>
         </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next card-one"></div>
+    <div class="swiper-button-prev card-one"></div>
+    <div class="swiper-pagination card-one"></div>
     </section>
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -269,7 +268,7 @@
             <div class="grid-cards-box-two">
                 <div class="grid-cards-two">
                     <div>
-                        <div class="img-cards-two"><a href="#" target="_blank"><img src="imagens/img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="img-cards-two"><a href="#"><img src="imagens/img-jogos/VILLAGE-PS4.jpg" width="220" alt=""></a></div>
                         <div class="cards-valor-two">R$ 299,90</div>
                         <div class="cards-valor-promo-two">R$ 349,90</div>
                         <div class="cards-parcela-two">12x 24,99 sem juros</div>
@@ -404,7 +403,7 @@
                 </div>
                 <div class="grid-cards-two">
                     <div>
-                        <div class="img-cards-two"><a href="/index-Sonic.html" target="_blank"><img src="imagens/img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
+                        <div class="img-cards-two"><a class="sonic" href="/index-Sonic.html"><img src="imagens/img-jogos/SONIC-PS4.jpg" width="220" alt=""></a></div>
                         <div class="cards-valor-two">R$ 189,90</div>
                         <div class="cards-valor-promo-two">R$ 249,90</div>
                         <div class="cards-parcela-two">12x 18,46</div>
@@ -525,7 +524,7 @@
 
 
 
-
+<script src="/JS/index.js" ></script>
 </body>
 </html>
 <!-- 

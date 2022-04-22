@@ -221,7 +221,7 @@ body {
 }
 .cards-msg {
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     padding-left: 30px;
 }
 .cards-espaco {
@@ -393,7 +393,8 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
     .logo {
-        margin-left: 0 !important;
+        margin: 0 !important;
+        padding-left: 0 !important;
     }
     .menu-imagens {
         justify-content: center !important;
@@ -414,6 +415,7 @@ body {
         flex-direction: column;
         padding: 0;
         margin: 0;
+        height: 100%;
     }
     .menu-indice li {
         flex-direction: column;
@@ -467,19 +469,14 @@ body {
         padding-bottom: 10px;
     }
     
-
-    
-
-
-
-
-
-
-
-
 }
 
-
+.hide {
+    display: none !important;
+}
+.hide-two {
+    display: block !important;
+}
 
 
 /* ---------- RODAPE ----------  */
@@ -513,4 +510,16 @@ body {
 }
 .rodape-box a div {
     color: black;
+}
+
+
+/* ---------- BUTTON ----------  */
+
+.btn {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    display: block !important;
+    margin: 0;
+    width: 100%;
 }
