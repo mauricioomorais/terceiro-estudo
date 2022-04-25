@@ -4,7 +4,7 @@
 ![Gif-blog](https://github.com/mauricioomorais/terceiro-estudo/blob/main/gif/20220421_192024.gif)
 
 
-### E seguimos com os estudos 🚀🚀🚀
+### Seguimos com os estudos 🚀🚀🚀
 
 ✅Ultilizei HTML5, CSS3 e Javascript.
 
